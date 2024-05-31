@@ -3,11 +3,11 @@ import { FaStopwatch } from "react-icons/fa";
 
 const Index = () => {
   return (
-    <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center" bg="black" color="yellow">
-      <Box as="nav" width="100%" p={4} bg="green.500">
+    <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center" bg="brand.900" color="brand.700">
+      <Box as="nav" width="100%" p={4} bg="brand.800">
         <Flex justify="space-between" align="center">
-          <Heading size="lg" color="black">Stopwatch</Heading>
-          <Button leftIcon={<FaStopwatch />} colorScheme="yellow" variant="solid">
+          <Heading size="lg" color="brand.900">Stopwatch</Heading>
+          <Button leftIcon={<FaStopwatch />} colorScheme="brand" variant="solid">
             Start
           </Button>
         </Flex>

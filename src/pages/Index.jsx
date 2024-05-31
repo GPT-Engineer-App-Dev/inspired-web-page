@@ -1,17 +1,20 @@
-// Update this page (the content is just a fallback if you fail and example)
-// Use chakra-ui
-import { Container, Text, VStack } from "@chakra-ui/react";
-
-// Example of using react-icons
-// import { FaRocket } from "react-icons/fa";
-// <IconButton aria-label="Add" icon={<FaRocket />} size="lg" />; // IconButton would also have to be imported from chakra
+import { Container, Text, VStack, Box, Flex, Heading, Button } from "@chakra-ui/react";
+import { FaStopwatch } from "react-icons/fa";
 
 const Index = () => {
   return (
-    <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
-      <VStack spacing={4}>
-        <Text fontSize="2xl">Your Blank Canvas</Text>
-        <Text>Chat with the agent to start making edits.</Text>
+    <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center" bg="black" color="yellow">
+      <Box as="nav" width="100%" p={4} bg="green.500">
+        <Flex justify="space-between" align="center">
+          <Heading size="lg" color="black">Stopwatch</Heading>
+          <Button leftIcon={<FaStopwatch />} colorScheme="yellow" variant="solid">
+            Start
+          </Button>
+        </Flex>
+      </Box>
+      <VStack spacing={4} mt={10}>
+        <Text fontSize="4xl" fontWeight="bold">00:00:00</Text>
+        <Text fontSize="lg">A sleek and modern stopwatch inspired by the classic design.</Text>
       </VStack>
     </Container>
   );
